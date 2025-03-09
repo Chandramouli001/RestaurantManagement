@@ -54,7 +54,7 @@ const App = () => {
     }
     try {
       const orderItems = cart.map(({ name, price, quantity }) => ({ name, price, quantity }));
-      const res = await axios.post("http://localhost:5000/api/orders", {
+      const res = await axios.post("https://restaurant-management-backend-delta.vercel.app/api/orders", {
         customerName,
         tableNumber,
         items: orderItems,
