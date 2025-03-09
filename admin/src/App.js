@@ -11,7 +11,7 @@ const AdminPanel = () => {
 
   const fetchOrders = async () => {
     try {
-      const response = await axios.get("http://localhost:5000/api/orders");
+      const response = await axios.get("https://restaurant-management-backend-delta.vercel.app/api/orders");
       setOrders(response.data);
     } catch (error) {
       console.error("Error fetching orders:", error);
@@ -20,7 +20,7 @@ const AdminPanel = () => {
 
   const updateStatus = async (orderId, status) => {
     try {
-      await axios.put(`http://localhost:5000/api/orders/${orderId}/status`, { status });
+      await axios.put(`https://restaurant-management-backend-delta.vercel.app/api/orders/${orderId}/status`, { status });
       fetchOrders();
     } catch (error) {
       console.error("Error updating status:", error);
@@ -29,7 +29,7 @@ const AdminPanel = () => {
 
   const deleteOrder = async (orderId) => {
     try {
-      await axios.delete(`http://localhost:5000/api/orders/${orderId}`);
+      await axios.delete(`https://restaurant-management-backend-delta.vercel.app/api/orders/${orderId}`);
       fetchOrders();
       alert("🗑️ Order deleted successfully!");
     } catch (error) {
