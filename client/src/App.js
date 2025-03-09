@@ -15,7 +15,7 @@ const App = () => {
   useEffect(() => {
     const fetchMenu = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/api/menu");
+        const res = await axios.get("https://restaurant-management-backend-delta.vercel.app/api/menu");
         const availableItems = res.data.filter(item => item.available);
         setMenu(availableItems);
       } catch (err) {
@@ -78,7 +78,7 @@ const App = () => {
     }
 
     try {
-      const res = await axios.get(`http://localhost:5000/api/orders/${orderId.trim()}`);
+      const res = await axios.get(`https://restaurant-management-backend-delta.vercel.app/api/orders/${orderId.trim()}`);
       const orderData = res.data;
 
       setOrderDetails(orderData);
