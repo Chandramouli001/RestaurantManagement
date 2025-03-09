@@ -1,0 +1,188 @@
+/* General Styles */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+
+/* Main Container */
+.app-container {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+/* Headings */
+h2, h3 {
+  color: #343a40;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* Inputs */
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  font-size: 16px;
+  background: #f1f3f5;
+  transition: 0.3s;
+}
+
+input:focus {
+  border-color: #007bff;
+  background: #fff;
+  outline: none;
+}
+
+/* Menu Items */
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  background: #f8f9fa;
+  border-radius: 5px;
+  margin: 5px 0;
+}
+
+/* Buttons */
+button {
+  padding: 10px 14px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  margin-top: 5px;
+  border-radius: 5px;
+  transition: 0.3s;
+  font-weight: 600;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+/* Action Buttons */
+.place-order-btn {
+  background-color: #28a745;
+  color: white;
+  width: 100%;
+  display: block;
+  padding: 12px;
+  font-size: 18px;
+  margin-top: 10px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.place-order-btn:hover {
+  background-color: #218838;
+}
+
+/* Track Order Button */
+.track-btn {
+  background-color: #007bff;
+  color: white;
+  width: 100%;
+  display: block;
+  padding: 12px;
+  font-size: 18px;
+  margin-top: 10px;
+  border-radius: 8px;
+}
+
+.track-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Add to Cart Button */
+.add-to-cart-btn {
+  background-color: #ff9800;
+  color: white;
+  padding: 8px 12px;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #e68900;
+}
+
+/* Remove from Cart Button */
+.remove-btn {
+  background-color: #dc3545;
+  color: white;
+  padding: 8px 12px;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+.remove-btn:hover {
+  background-color: #c82333;
+}
+
+/* Cart Section */
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  background: #f8f9fa;
+  border-radius: 5px;
+  margin: 5px 0;
+}
+
+/* Total Amount */
+.total-amount {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 10px;
+  padding: 10px;
+  background: #ffeb3b;
+  border-radius: 5px;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+}
+
+/* Order Details & Final Bill */
+.order-details, .final-bill {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 10px;
+  background: #ffffff;
+  border: 2px solid #007bff;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.final-bill {
+  border-color: #28a745;
+}
+
+/* Status Badge */
+.status-badge {
+  padding: 5px 10px;
+  font-weight: bold;
+  border-radius: 5px;
+  color: white;
+}
+
+.status-pending {
+  background-color: #ffc107;
+}
+
+.status-preparing {
+  background-color: #007bff;
+}
+
+.status-completed {
+  background-color: #28a745;
+}
